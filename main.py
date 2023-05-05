@@ -1,13 +1,21 @@
 #1
+def create_file(file_name, names):
+    with open(file_name, 'w') as file:
+        file.write(','.join(names))
 
+#Usage
+create_file('names.txt', ['Ada, Alan, Isabella, Lizbeth, Abigail, Meltem, Gulcan'])
+
+
+"""
 def create_file(file_name):
     with open(file_name, 'w') as file:
         # Write the names to the file
         file.write('Ada, Alan, Isabella, Lizbeth, Abigail, Meltem, Gulcan')
 
-
 #Usage
 create_file('names.txt')
+"""
 
 #2
 def transform_to_row(input_file, output_file):
@@ -62,8 +70,12 @@ def strip_greeting(input_file, output_file):
 #Usage
 strip_greeting('greetings.txt', 'output2.txt')
 
+# I need 2 files for exercise 5: I created them manually
+
+
 #5
 def combine_files(file1, file2, output_file):
+
     # Open the input files in read mode
     with open(file1, 'r') as f1, open(file2, 'r') as f2:
         # Read the contents of the files and split them into lines

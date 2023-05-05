@@ -5,6 +5,7 @@ def create_file(file_name, names):
 
 #Usage
 create_file('names.txt', ['Ada, Alan, Isabella, Lizbeth, Abigail, Meltem, Gulcan'])
+create_file('surnames.txt', ['Lovelace, Turing, Cortez, Bathory, Red, Arnhen, Kerity'])
 
 
 """
@@ -33,6 +34,7 @@ def transform_to_row(input_file, output_file):
 
 #Usage:
 transform_to_row('names.txt', 'output.txt')
+transform_to_row('surnames.txt', 'file2.txt')
 
 #3
 def add_greeting(input_file, output_file):
@@ -50,7 +52,7 @@ def add_greeting(input_file, output_file):
         output.write("\n".join(words))
 
 #Usage
-add_greeting('output.txt', 'greetings.txt')
+add_greeting('output.txt', 'file1.txt')
 
 #4
 def strip_greeting(input_file, output_file):
